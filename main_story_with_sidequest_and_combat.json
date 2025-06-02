@@ -1,0 +1,224 @@
+{
+  "stage_1": {
+    "id": "stage_1",
+    "type": "main",
+    "text": "1일차. 모험은 시작된다. 안개 낀 숲을 지나며 길을 찾는다.",
+    "image": "stage_1_image.png",
+    "choices": [
+      {
+        "text": "왼쪽 길로 간다.",
+        "next": "stage_2",
+        "reward": {"item": null, "stat": {"strength": 1}}
+      },
+      {
+        "text": "오른쪽 길로 간다.",
+        "next": "stage_2",
+        "reward": {"item": null, "stat": {"intelligence": 1}}
+      }
+    ]
+  },
+  "stage_2": {
+    "id": "stage_2",
+    "type": "main",
+    "text": "2일차. 무너진 다리를 조심스럽게 건넌다.",
+    "image": "stage_2_image.png",
+    "choices": [
+      {
+        "text": "조용히 지나간다.",
+        "next": "stage_3",
+        "reward": {"item": null, "stat": {"morality": 1}}
+      }
+    ]
+  },
+  "stage_3": {
+    "id": "stage_3",
+    "type": "main",
+    "text": "3일차. 마을 입구에서 누군가 손을 흔든다.",
+    "image": "stage_3_image.png",
+    "trigger": {
+      "side_quest": {
+        "description": "마을 주민이 도움을 요청한다.",
+        "ai_generated": true
+      }
+    },
+    "choices": [
+      {
+        "text": "도움을 준다.",
+        "next": "stage_4",
+        "reward": {"item": null, "stat": {"morality": 1}}
+      }
+    ]
+  },
+  "stage_4": {
+    "id": "stage_4",
+    "type": "main",
+    "text": "4일차. 보상으로 마을에서 아이템을 받았다.",
+    "image": "stage_4_image.png",
+    "choices": [
+      {
+        "text": "여정을 계속한다.",
+        "next": "stage_5",
+        "reward": {"item": "빛나는 조각", "stat": {"intelligence": 1}}
+      }
+    ]
+  },
+  "stage_5": {
+    "id": "stage_5",
+    "type": "main",
+    "text": "5일차. 숲에서 적의 기척이 느껴진다.",
+    "image": "stage_5_image.png",
+    "trigger": {
+      "combat": {
+        "enemy": "숲 복병",
+        "combat_id": "combat_5_forest",
+        "level": 3
+      }
+    },
+    "choices": [
+      {
+        "text": "전투에 돌입한다.",
+        "next": "combat_result_5",
+        "reward": {"item": null, "stat": {}}
+      }
+    ]
+  },
+  "combat_result_5": {
+    "id": "combat_result_5",
+    "type": "branch",
+    "text": "전투 결과에 따라 경로가 달라진다.",
+    "branch": [
+      {
+        "condition": {"combat_result": "win"},
+        "next": "stage_6",
+        "reward": {"stat": {"strength": 1}, "item": "복병의 칼"}
+      },
+      {
+        "condition": {"combat_result": "lose"},
+        "next": "stage_5_retry",
+        "reward": {"stat": {"morality": 1}}
+      }
+    ]
+  },
+  "stage_5_retry": {
+    "id": "stage_5_retry",
+    "type": "main",
+    "text": "전투에서 패배했지만 목숨은 건졌다.",
+    "image": "stage_5_retry.png",
+    "choices": [
+      {
+        "text": "재정비 후 전진한다.",
+        "next": "stage_6",
+        "reward": {"item": null, "stat": {"morality": 1}}
+      }
+    ]
+  },
+  "stage_6": {
+    "id": "stage_6",
+    "type": "main",
+    "text": "6일차. 전투 후 진입한 신비한 계곡.",
+    "image": "stage_6_image.png",
+    "choices": [
+      {
+        "text": "계곡을 따라 걷는다.",
+        "next": "stage_7",
+        "reward": {"item": null, "stat": {"intelligence": 1}}
+      }
+    ]
+  },
+  "stage_7": {
+    "id": "stage_7",
+    "type": "main",
+    "text": "7일차. 고대의 유적이 모습을 드러낸다.",
+    "image": "stage_7_image.png",
+    "choices": [
+      {
+        "text": "탐험을 시작한다.",
+        "next": "stage_8",
+        "reward": {"item": "고서", "stat": {"intelligence": 1}}
+      }
+    ]
+  },
+  "stage_8": {
+    "id": "stage_8",
+    "type": "main",
+    "text": "8일차. 유적 내부에서 퍼즐을 발견한다.",
+    "image": "stage_8_image.png",
+    "choices": [
+      {
+        "text": "퍼즐을 푼다.",
+        "next": "stage_9",
+        "reward": {"item": null, "stat": {"intelligence": 1}}
+      }
+    ]
+  },
+  "stage_9": {
+    "id": "stage_9",
+    "type": "main",
+    "text": "9일차. 빛나는 조각을 하나 더 발견한다.",
+    "image": "stage_9_image.png",
+    "choices": [
+      {
+        "text": "보관한다.",
+        "next": "stage_10",
+        "reward": {"item": "빛나는 조각", "stat": {"morality": 1}}
+      }
+    ]
+  },
+  "stage_10": {
+    "id": "stage_10",
+    "type": "main",
+    "text": "10일차. 마지막 문 앞에 도달했다.",
+    "image": "stage_10_image.png",
+    "choices": [
+      {
+        "text": "문을 연다.",
+        "next": "ending_branch",
+        "reward": {"item": null, "stat": {}}
+      }
+    ]
+  },
+  "ending_branch": {
+    "id": "ending_branch",
+    "type": "decision_point",
+    "text": "문을 열자 당신의 여정이 평가받는다.",
+    "choices": [
+      {
+        "text": "운명을 받아들인다.",
+        "next": [
+          {"condition": {"has_item": "빛나는 조각"}, "result": "ending_hero"},
+          {"condition": {"intelligence": ">=5"}, "result": "ending_mage"},
+          {"condition": {"morality": ">=5"}, "result": "ending_saint"},
+          {"condition": {"default": true}, "result": "ending_neutral"}
+        ]
+      }
+    ]
+  },
+  "ending_hero": {
+    "id": "ending_hero",
+    "type": "ending",
+    "text": "당신은 빛나는 조각으로 세상을 구했다.",
+    "reward": {"title": "Hero"},
+    "choices": []
+  },
+  "ending_mage": {
+    "id": "ending_mage",
+    "type": "ending",
+    "text": "지혜로운 당신은 마법사의 길을 걷는다.",
+    "reward": {"title": "Mage"},
+    "choices": []
+  },
+  "ending_saint": {
+    "id": "ending_saint",
+    "type": "ending",
+    "text": "선한 당신은 세상을 평화로 이끈다.",
+    "reward": {"title": "Saint"},
+    "choices": []
+  },
+  "ending_neutral": {
+    "id": "ending_neutral",
+    "type": "ending",
+    "text": "당신은 조용히 여정을 마친다.",
+    "reward": {"title": "Neutral"},
+    "choices": []
+  }
+}
