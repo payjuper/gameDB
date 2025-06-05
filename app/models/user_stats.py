@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, Float, ForeignKey
+from sqlalchemy import Column, Integer, Float, Text, ForeignKey
 from app.db.session import Base
+
 
 class UserStats(Base):
     __tablename__ = "user_stats"
@@ -11,10 +12,9 @@ class UserStats(Base):
     luck = Column(Integer, default=0)
     morality = Column(Integer, default=0)
     life = Column(Integer, default=0)
-    sanity = Column(Integer, default=0)
-    hp = Column(Integer, default=1000)
-    attack = Column(Integer, default=0)
-    defense = Column(Integer, default=0)
-    speed = Column(Integer, default=0)
-    evasion = Column(Float, default=0)
-    crit_rate = Column(Float, default=0)
+    spirit = Column(Integer, default=0)
+    experience = Column(Integer, default=0)
+    level = Column(Integer, default=1)
+    equipped_items = Column(Text)         # 예: {"weapon": "sword_id", ...}
+    inventory_items = Column(Text)        # 예: ["item1", "item2", ...]
+    

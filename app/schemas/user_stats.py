@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import Dict, Optional, List
 
 class UserStatsBase(BaseModel):
     strength: int = 0
@@ -7,13 +8,16 @@ class UserStatsBase(BaseModel):
     luck: int = 0
     morality: int = 0
     life: int = 0
-    sanity: int = 0
-    hp: int = 1000
-    attack: int = 0
-    defense: int = 0
-    speed: int = 0
-    evasion: float = 0.0
-    crit_rate: float = 0.0
+    spirit: int = 0            # ✅ 새로 추가
+    experience: int = 0        # ✅ 새로 추가
+    level: int = 1             # ✅ 새로 추가
+    equipped_items: Dict[str, Optional[str]] = {
+        "weapon": None,
+        "armor": None,
+        "shield": None,
+        "accessory": None
+    }
+    inventory_items: List[str] = []
 
 class UserStatsCreate(UserStatsBase):
     pass

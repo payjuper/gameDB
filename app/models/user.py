@@ -13,6 +13,4 @@ class User(Base):
     username = Column(String(50), nullable=False)
     password = Column(String(100), nullable=False)
     email = Column(String(100), nullable=True)
-    level = Column(Integer, default=1)
-    experience = Column(Integer, default=0)
     created_at = Column(TIMESTAMP, server_default=func.now())

@@ -81,7 +81,7 @@
         "reward": {"item": null, "stat": {}}
       }
     ]
-  },
+  },  
   "combat_result_5": {
     "id": "combat_result_5",
     "type": "branch",

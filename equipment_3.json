@@ -1,0 +1,371 @@
+[
+  {
+    "id": "sample_all_stats_item",
+    "name": "예시의 검",
+    "type": "weapon",
+    "tier": 99,
+    "grip": "one-handed",
+    "stats": {
+      "strength": 1,
+      "agility": 1,
+      "intelligence": 1,
+      "luck": 1,
+      "defense": 1,
+      "hp": 1
+    },
+    "value": 999,
+    "description": "모든 스탯 항목을 예시로 포함한 테스트용 아이템."
+  },
+
+  {
+    "id": "tier1_dagger",
+    "name": "대거",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "one-handed",
+    "stats": { "strength": 1, "agility": 1 },
+    "value": 16,
+    "description": "품안에 넣을 수 있는 짧은 단도."
+  },
+  {
+    "id": "tier1_wand",
+    "name": "완드",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "one-handed",
+    "stats": { "intelligence": 2 },
+    "value": 16,
+    "description": "마법이 깃든 짧은 지팡이."
+  },
+  {
+    "id": "tier1_round_shield",
+    "name": "라운드 실드",
+    "type": "shield",
+    "tier": 1,
+    "stats": { "defense": 1 },
+    "value": 18,
+    "description": "둥글게 깎은 나무판에 철을 덧대어 만든 방패."
+  },
+  {
+    "id": "tier1_pad_armor",
+    "name": "패드 아머",
+    "type": "armor",
+    "tier": 1,
+    "stats": { "defense": 1, "hp": 5 },
+    "value": 25,
+    "description": "천으로 만들어진 갑옷. 폭신하다."
+  },
+  {
+    "id": "tier1_hide",
+    "name": "하이드",
+    "type": "armor",
+    "tier": 1,
+    "stats": { "hp": 10 },
+    "value": 30,
+    "description": "동물 가죽을 벗겨 만든 옷. 벼룩이 좋아함."
+  },
+  {
+    "id": "tier1_mace",
+    "name": "메이스",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "one-handed",
+    "stats": { "strength": 2 },
+    "value": 15,
+    "description": "끝에 쇳덩이를 붙인 한손 둔기."
+  },
+  {
+    "id": "tier1_wood_staff",
+    "name": "우드 스태프",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "two-handed",
+    "stats": { "intelligence": 4 },
+    "value": 28,
+    "description": "나무를 깎아 만든 긴 지팡이."
+  },
+  {
+    "id": "tier1_crossbow",
+    "name": "크로스보우",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "two-handed",
+    "stats": { "agility": 4 },
+    "value": 45,
+    "description": "묵직한 크로스보우. 아, 왜 안 나가?"
+  },
+  {
+    "id": "tier1_longsword",
+    "name": "롱소드",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "two-handed",
+    "stats": { "strength": 4 },
+    "value": 33,
+    "description": "균형 잡힌 무기로 다양한 상황에서 사용 가능."
+  },
+  {
+    "id": "tier1_longbow",
+    "name": "롱보우",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "two-handed",
+    "stats": { "agility": 4 },
+    "value": 34,
+    "description": "긴 활. 사거리 길고 위력이 좋다."
+  },
+  {
+    "id": "tier1_shortbow",
+    "name": "숏보우",
+    "type": "weapon",
+    "tier": 1,
+    "grip": "two-handed",
+    "stats": { "agility": 3 },
+    "value": 32,
+    "description": "작은 활. 장전 빠름."
+  },
+  {
+    "id": "tier1_buckler",
+    "name": "버클러",
+    "type": "shield",
+    "tier": 1,
+    "stats": { "defense": 2 },
+    "value": 20,
+    "description": "작고 둥근 손방패."
+  },
+  {
+    "id": "tier1_robe",
+    "name": "로브",
+    "type": "armor",
+    "tier": 1,
+    "stats": { "hp": 10 },
+    "value": 92,
+    "description": "부드러운 천으로 만들어진, 전신을 가리는 옷."
+  },
+  {
+    "id": "tier2_kukri",
+    "name": "쿠크리",
+    "type": "weapon",
+    "tier": 2,
+    "grip": "one-handed",
+    "stats": { "strength": 3 },
+    "value": 48,
+    "description": "무게 중심이 머리에 있는 단검."
+  },
+  {
+    "id": "tier2_halberd",
+    "name": "할버드",
+    "type": "weapon",
+    "tier": 2,
+    "grip": "two-handed",
+    "stats": { "strength": 8 },
+    "value": 90,
+    "description": "창에 도끼날을 더한 무기."
+  },
+  {
+    "id": "tier2_rapier",
+    "name": "레이피어",
+    "type": "weapon",
+    "tier": 2,
+    "grip": "one-handed",
+    "stats": { "agility": 3 },
+    "value": 53,
+    "description": "찌르기에 특화된 한손검."
+  },
+  {
+    "id": "tier2_greatsword",
+    "name": "그레이트 소드",
+    "type": "weapon",
+    "tier": 2,
+    "grip": "two-handed",
+    "stats": { "strength": 10 },
+    "value": 102,
+    "description": "거대한 칼날을 지닌 양손검."
+  },
+  {
+    "id": "tier2_kite_shield",
+    "name": "카이트 실드",
+    "type": "shield",
+    "tier": 2,
+    "stats": { "defense": 4 },
+    "value": 18,
+    "description": "연 모양의 방패."
+  },
+  {
+    "id": "tier2_half_plate",
+    "name": "하프 플레이트 아머",
+    "type": "armor",
+    "tier": 2,
+    "stats": { "defense": 3, "hp": 20 },
+    "value": 95,
+    "description": "강철판으로 가슴을 가린 갑옷."
+  },
+  {
+    "id": "tier2_magic_staff",
+    "name": "매직 스태프",
+    "type": "weapon",
+    "tier": 2,
+    "grip": "two-handed",
+    "stats": { "intelligence": 10 },
+    "value": 88,
+    "description": "마법의 힘이 깃든 지팡이."
+  },
+  {
+    "id": "tier2_glass_wand",
+    "name": "유리 완드",
+    "type": "weapon",
+    "tier": 2,
+    "grip": "one-handed",
+    "stats": { "intelligence": 5 },
+    "value": 90,
+    "description": "유리로 만든 마법 지팡이."
+  },
+  {
+    "id": "tier2_silver_dagger",
+    "name": "은장도",
+    "type": "weapon",
+    "tier": 2,
+    "grip": "one-handed",
+    "stats": { "agility": 4 },
+    "value": 105,
+    "description": "은으로 장식된 귀족용 단검."
+  },
+  {
+    "id": "tier3_divona_bow",
+    "name": "디보나의 활",
+    "type": "weapon",
+    "tier": 3,
+    "grip": "two-handed",
+    "stats": { "agility": 20 },
+    "value": 0,
+    "description": "디옹 샘의 물빛에서 영감을 받은 활."
+  },
+  {
+    "id": "tier3_morvan_armor",
+    "name": "모르방 갑옷",
+    "type": "armor",
+    "tier": 3,
+    "stats": { "defense": 10, "hp": 30 },
+    "value": 0,
+    "description": "모르방 언덕의 나무로 만든 갑옷."
+  },
+  {
+    "id": "tier3_fosse_staff",
+    "name": "포스 스태프",
+    "type": "weapon",
+    "tier": 3,
+    "grip": "two-handed",
+    "stats": { "intelligence": 25 },
+    "value": 0,
+    "description": "디옹의 물로 축성된 지팡이."
+  },
+  {
+    "id": "tier3_armançon_sword",
+    "name": "아르망송 대검",
+    "type": "weapon",
+    "tier": 3,
+    "grip": "two-handed",
+    "stats": { "strength": 30 },
+    "value": 0,
+    "description": "강철로 만든 거대한 양손검."
+  },
+  {
+    "id": "tier3_oracle_shield",
+    "name": "로라클 물결 방패",
+    "type": "shield",
+    "tier": 3,
+    "stats": { "defense": 10 },
+    "value": 0,
+    "description": "신탁의 힘으로 공격을 흘려내는 방패."
+  },
+  {
+    "id": "acc_silver_ring",
+    "name": "은반지",
+    "type": "accessory",
+    "tier": 1,
+    "stats": { "luck": 2 },
+    "value": 40,
+    "description": "별다른 장식은 없는 작은 은반지. 인간들은 서로 약속을 할 때 주고받곤 하지만, 아무런 효과도 없다."
+  },
+  {
+    "id": "acc_elf_pendant",
+    "name": "엘프의 팬던트",
+    "type": "accessory",
+    "tier": 2,
+    "stats": { "agility": 5 },
+    "value": 200,
+    "description": "이렐르에게 건네받은 약속의 징표. 녹색 빛을 은은하게 뿜어낸다."
+  },
+  {
+    "id": "acc_life_gem",
+    "name": "생명의 보옥",
+    "type": "accessory",
+    "tier": 2,
+    "stats": { "hp": 10 },
+    "value": 400,
+    "description": "실로시앤트 숲의 드루이드가 지니고 있던 보옥. 주변 환경의 생명력을 북돋는 신비한 마력을 지녔다."
+  },
+  {
+    "id": "acc_expanding_shield",
+    "name": "확장하는 방패",
+    "type": "accessory",
+    "tier": 2,
+    "stats": { "defense": 3 },
+    "value": 400,
+    "description": "방패를 강화하는 마법이 걸려있는 팔찌."
+  },
+  {
+    "id": "acc_berserker_rune",
+    "name": "광전사의 룬",
+    "type": "accessory",
+    "tier": 2,
+    "stats": { "strength": 5 },
+    "value": 400,
+    "description": "광전사의 몸에 새겨지는 주술적인 문양. 뜻은 '공격이 최선의 방어'다."
+  },
+  {
+    "id": "acc_edmund_scroll",
+    "name": "에드몬드의 양피지",
+    "type": "accessory",
+    "tier": 2,
+    "stats": { "intelligence": 5 },
+    "value": 400,
+    "description": "마탑의 학장 에드몬드가 마도구의 사용법에 대해 기록해놓은 양피지."
+  },
+  {
+    "id": "cons_potion_hp_small",
+    "name": "소형 체력 포션",
+    "type": "consumable",
+    "tier": 1,
+    "stats": { "life": 1 },
+    "value": 30,
+    "description": "체력을 회복하는 작은 포션. 딸기 맛이 날 것처럼 생겼지만 그렇진 않다. 체력 1칸 회복."
+  },
+  {
+    "id": "cons_potion_mp_small",
+    "name": "소형 정신력 포션",
+    "type": "consumable",
+    "tier": 1,
+    "stats": { "spirit": 1 },
+    "value": 30,
+    "description": "정신력을 회복하는 작은 포션. 마시면 머리가 맑아지는 기분이 든다. 정신력 1칸 회복."
+  },
+  {
+    "id": "cons_potion_hp",
+    "name": "체력 포션",
+    "type": "consumable",
+    "tier": 2,
+    "stats": { "life": 2 },
+    "value": 50,
+    "description": "체력을 회복하는 포션. 딸기 맛이 날 것처럼 생겼지만 그렇진 않다. 체력 2칸 회복."
+  },
+  {
+    "id": "cons_potion_mp",
+    "name": "정신력 포션",
+    "type": "consumable",
+    "tier": 2,
+    "stats": { "spirit": 2 },
+    "value": 50,
+    "description": "정신력을 회복하는 포션. 마시면 머리가 맑아지는 기분이 든다. 정신력 2칸 회복."
+  }
+]
