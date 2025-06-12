@@ -5,7 +5,7 @@ from datetime import datetime
 
 class UserProgressBase(BaseModel):
     current_stage: int = 1
-    checkpoint: int = 1
+    checkpoint: str = "check-1"
     play_time: int = 0
 
 class UserProgressCreate(UserProgressBase):

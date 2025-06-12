@@ -8,6 +8,6 @@ class UserProgress(Base):
 
     user_id = Column(Integer, ForeignKey("users.user_id"), primary_key=True)
     current_stage = Column(Integer, default=1)
-    checkpoint = Column(Integer, default=1)
+    checkpoint = Column(String(20), default="check-1")
     play_time = Column(Integer, default=0)
     last_saved_at = Column(DateTime, default=func.now())
